@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 20px 4px 10px #f3eee7;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #0e49be;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #fff;
+}
+
+.hero {
+	background: url('/hero.jpg');
+	background-size: cover;
+	background-position: top;
+	background-blend-mode: multiply;
+}
+
+.cond {
+	@apply py-3 px-5 mb-1 hover:bg-primary flex flex-col justify-center items-center space-y-4;
+}
+
+.specialty-card {
+	@apply flex flex-col justify-center items-center text-primary hover:bg-primary hover:text-secondary p-6 py-8 border border-slate-100;
+}
+
+.appointment {
+	background: url('/appointment.jpg') rgba(118, 115, 115, 0.635);
+	background-size: cover;
+	background-position: top;
+	background-blend-mode: multiply;
+}
